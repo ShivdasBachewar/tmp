@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body> 
+<!-- Header -->
+<div style='text-align:center; ' class='well'>
+<h1> Header </h1>
+</div>
+
+<!-- Navigation -->
+<b>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Information</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</b>
+<br>
+<br>
+<div style="float: left;width: 60%;  background-color:gray;">
+<h4>
+This is box 2
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+<h4>
+</div>
+<div style="float: right;width: 40%; background-color:azure;">
+<h4>
+This is box 2
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+1<br>
+<h4>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<!-- footer -->
+
+<div class='footer'>
+ <h1> Footer </h1>
+</div>
+
+
+</body>
+</html>
