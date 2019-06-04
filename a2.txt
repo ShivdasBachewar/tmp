@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body> 
+<div style='padding:30px;'>
+<div style="float: left;width: 47%; text-align:center; border:1px;border-style: solid; margin:10px;">
+<h4>
+	<h3> Form-I</h3>
+	<hr>
+	<form>
+	Email Id : <input type='email' name='email'><br>	<br>
+	Username : <input type='text' name='username'><br>	<br>
+	Password : <input type='password' name='password'><br>	<br>
+	<button type="button" onclick="alert('Left Form Submitted')">Submit</button>
+	</form>
+	
+<h4>
+</div>
+
+<div style="float: right;width: 47%; text-align:center; border:1px;border-style: solid; margin:10px;">
+<h4>
+	<h3> Form-II</h3>
+	<hr>
+	<form>
+	First Name : <input type='text' name='fn'><br>	<br>
+	Last Name : <input type='text' name='ln'><br>	<br>
+	Date Of Birth : <input type='date' name='dob'><br>	<br>
+	City : <input type='text' name='city'><br>	<br>
+	Mobile Number : <input type='text' name='ln'><br>	<br>
+	Gender :   <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+	<br><br>
+	Employment Status : <input type="radio" name="gender" value="male" checked> yes
+  <input type="radio" name="gender" value="female"> no
+	<br><br>
+	<button type="button" onclick="alert('Right Form Submitted')">Submit</button>
+	</form>
+	
+<h4>
+</div>
+</div>
+
+</body>
+</html>
