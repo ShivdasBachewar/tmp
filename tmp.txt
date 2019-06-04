@@ -53,47 +53,34 @@ li a.active {
 <body> 
 <!-- Header -->
 <div style='text-align:center; ' class='well'>
-<h1> Header </h1>
+<h1> Welcome to Amazon.com </h1>
 </div>
 
 <!-- Navigation -->
 <b>
 <ul>
   <li><a href="#home">Home</a></li>
-  <li><a href="#news">Information</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="#news">Sell Products</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+  <li><a href="#about">Register</a></li>
 </ul>
 </b>
-<br>
-<br>
-<div style="float: left;width: 60%;  background-color:gray;">
+
+<div style='padding:30px;'>
+<div style="float: left;width: 47%; text-align:center; background-color:khaki; margin:10px;">
 <h4>
-This is box 2
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
+	<h3> Welcome to Amazon.com</h3>
+	Amazon.com, Inc., is an American multinational technology company based in Seattle,
+<br>Washington that focuses on e-commerce, cloud computing,<br>digital streaming and artificial intelligence. 
 <h4>
 </div>
-<div style="float: right;width: 40%; background-color:azure;">
+
+<div style="float: right;width: 47%; text-align:center; background-color:khaki; margin:10px;">
 <h4>
-This is box 2
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
-1<br>
+	<h3> We have Amazon Prime</h3>
+	Amazon Prime is a paid subscription service offered by Amazon that gives users access to services that would otherwise be unavailable, or cost extra, to the typical Amazon customer. This includes free two-day delivery, Two hour delivery for a fee through Prime Now, streaming music and video, and other benefits.
 <h4>
+</div>
 </div>
 
 <br>
@@ -103,7 +90,9 @@ This is box 2
 <!-- footer -->
 
 <div class='footer'>
- <h1> Footer </h1>
+   <p>Posted by: Abc </p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
 </div>
 
 
