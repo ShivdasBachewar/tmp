@@ -125,8 +125,7 @@ def get_server_time():
 
 def lambda_handler(event, context):
 	global cors_header
-	#endpoint = event['rawPath'].split("/")[-1]
-	endpoint = event.split("/")[-1]
+	endpoint = event['rawPath'].split("/")[-1]
 	
 	## config
 	if 'config' in endpoint:
@@ -142,7 +141,6 @@ def lambda_handler(event, context):
 	if 'history' in endpoint:
 		cors_header['body'] = history(event['queryStringParameters'])
 		return cors_header
-		#return history({'symbol':"100822"})
 	
 	## time
 	if 'time' in endpoint:
