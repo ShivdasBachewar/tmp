@@ -5,6 +5,18 @@ import requests
 from datetime import timezone 
 import datetime, time
 
+
+cors_header =  {
+	'statusCode': 200,
+	'headers': {
+			'Access-Control-Allow-Headers': 'Accept',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': '*'
+		},
+		'body': None
+	}
+
+
 ## ------------------------------- config ------------------------------##
 def config():
 	# Config Data
@@ -112,24 +124,31 @@ def get_server_time():
 ## ------------------------------- lambda_handler ------------------------------##
 
 def lambda_handler(event, context):
-	endpoint = event['rawPath'].split("/")[-1]
-	#endpoint = event.split("/")[-1]
+	global cors_header
+	#endpoint = event['rawPath'].split("/")[-1]
+	endpoint = event.split("/")[-1]
 	
 	## config
-	if endpoint == 'config':
-		return config()
+	if 'config' in endpoint:
+		cors_header['body'] = config()
+		return cors_header
 	
 	## symbol_info
-	if endpoint == 'symbol_info':
-		return symbol_info()
+	if 'symbol_info' in endpoint:
+		cors_header['body'] = symbol_info()
+		return cors_header
 
 	## history
-	if endpoint == 'history':
-		return history(event['queryStringParameters'])
+	if 'history' in endpoint:
+		cors_header['body'] = history(event['queryStringParameters'])
+		return cors_header
 		#return history({'symbol':"100822"})
 	
 	## time
-	if endpoint == 'time':
-		return get_server_time()
+	if 'time' in endpoint:
+		cors_header['body'] = get_server_time()
+		return cors_header
 	
-	return json.dumps({'responce':None})
+	return cors_header
+
+
